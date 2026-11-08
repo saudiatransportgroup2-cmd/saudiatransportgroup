@@ -6,3 +6,5 @@ dist
 .env*.local
 *.tsbuildinfo
 .vinext
+.open-next
+.dev.vars
