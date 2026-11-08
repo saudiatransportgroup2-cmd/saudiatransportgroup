@@ -1,0 +1,188 @@
+import type { Lang } from "@/config/site";
+
+const en = {
+  skip: "Skip to main content",
+  nav: {
+    home: "Home", about: "About", services: "Services", fleet: "Fleet",
+    airport: "Airport Transfers", umrah: "Umrah Transportation", ziyarat: "Ziyarat",
+    chauffeur: "Chauffeur", corporate: "Corporate", contact: "Contact", quote: "Get a Quote",
+    menu: "Menu", close: "Close menu", language: "العربية", primary: "Primary navigation",
+  },
+  cta: {
+    quote: "Get a Quote", whatsapp: "Book on WhatsApp", call: "Call Now",
+    learnMore: "Learn more", viewAll: "View all services", viewFleet: "View our fleet",
+    requestVehicle: "Request this vehicle", bookService: "Book this service",
+  },
+  home: {
+    eyebrow: "Saudi Arabia & GCC",
+    title: "Reliable private transport across Saudi Arabia",
+    subtitle: "Umrah, airport and intercity transfers between Makkah, Madinah, Jeddah and Riyadh — with professional drivers and vehicles to suit every group.",
+    servicesTitle: "Transport services for every journey",
+    servicesLead: "From a single airport pickup to a full pilgrim group programme, we arrange the vehicle and driver for you.",
+    fleetTitle: "A vehicle for every group size",
+    fleetLead: "Sedans, SUVs, vans, minibuses and buses — tell us your group size and we recommend the right fit.",
+    whyTitle: "Why travellers choose us",
+    processTitle: "How booking works",
+    routesTitle: "Popular routes and cities",
+    faqTitle: "Frequently asked questions",
+    ctaTitle: "Ready to plan your transport?",
+    ctaText: "Send us your route, dates and group size. We reply with a clear quote — no obligation.",
+  },
+  why: [
+    { t: "Simple booking", d: "Book by WhatsApp, phone or the quote form — whichever is easiest for you." },
+    { t: "Vehicles for all group sizes", d: "From private sedans to full-size buses for pilgrim groups and corporate teams." },
+    { t: "Arabic & English support", d: "Our team communicates with you in Arabic and English." },
+    { t: "Clear, upfront quotes", d: "You receive the route, vehicle and price confirmed before you travel." },
+  ],
+  steps: [
+    { t: "Send your request", d: "Share route, date, time and passengers by WhatsApp or the quote form." },
+    { t: "Receive your quote", d: "We confirm the vehicle type and price for your journey." },
+    { t: "Confirm your booking", d: "Approve the details and we assign your vehicle and driver." },
+    { t: "Travel with ease", d: "Your driver meets you at the agreed time and place." },
+  ],
+  fleet: {
+    title: "Our Fleet", lead: "Vehicles for individuals, families, groups and corporate clients. Capacities are typical — we confirm the exact vehicle at booking.",
+    passengers: "Passengers", luggage: "Luggage", upTo: "Up to", bestFor: "Best for",
+    note: "Available vehicle models vary by date and route. Contact us to confirm your preferred vehicle.",
+  },
+  services: { title: "Our Services", lead: "Private transport across Saudi Arabia and the GCC, arranged around your schedule.", includes: "What's included", idealFor: "Ideal for", related: "Related services", faqs: "Common questions" },
+  locations: { title: "Transport in", lead: "Private transfers, Umrah transport and airport pickups", servicesIn: "Services available in", other: "Other locations" },
+  about: {
+    title: "About Saudi Transport Group",
+    lead: "A Saudi-based transport provider serving pilgrims, families and businesses across the Kingdom and the GCC.",
+    p1: "Saudi Transport Group arranges private road transport for Umrah pilgrims, visitors, families and companies — including airport transfers, Makkah and Madinah transport, ziyarat tours, chauffeur service and cross-border GCC transfers.",
+    p2: "Our focus is straightforward: the right vehicle, a professional driver, and clear communication from your first message to your drop-off.",
+    valuesTitle: "What we focus on",
+    values: [
+      { t: "Reliability", d: "Planned pickups and clear confirmations so you know what to expect." },
+      { t: "Comfort", d: "Clean, suitable vehicles matched to your group size and luggage." },
+      { t: "Respect for pilgrims", d: "We understand the rhythm of Umrah travel and plan around it." },
+      { t: "Transparency", d: "Quotes confirmed before travel, with no surprises on the day." },
+    ],
+  },
+  contact: {
+    title: "Contact Us", lead: "Reach our team by WhatsApp, phone or email. We'll reply as soon as possible.",
+    phone: "Phone", whatsapp: "WhatsApp", email: "Email", hours: "Availability", hoursValue: "Enquiries welcome 24/7",
+    enquiryTitle: "Send an enquiry",
+  },
+  quotePage: { title: "Get a Quote", lead: "Tell us about your trip. We'll confirm the vehicle and price by WhatsApp, phone or email." },
+  form: {
+    name: "Full name", phone: "Phone / WhatsApp", email: "Email (optional)", service: "Service", vehicle: "Preferred vehicle",
+    pickup: "Pickup location", dropoff: "Drop-off location", date: "Travel date", time: "Pickup time",
+    passengers: "Passengers", luggage: "Bags", notes: "Additional details", any: "Any / not sure",
+    select: "Select…", submit: "Send via WhatsApp", sending: "Sending…",
+    success: "Thank you — your request is ready. WhatsApp should open with your details; if it didn't, use the button below.",
+    openWa: "Open WhatsApp", error: "Please correct the highlighted fields.", failed: "Something went wrong. Please contact us on WhatsApp or by phone.",
+    required: "This field is required", invalidPhone: "Enter a valid phone number", invalidEmail: "Enter a valid email",
+    privacy: "We use your details only to respond to your request.",
+  },
+  footer: {
+    tagline: "Private transport for Umrah, airport, intercity and corporate travel across Saudi Arabia and the GCC.",
+    services: "Services", company: "Company", contact: "Contact", rights: "All rights reserved.", locations: "Locations",
+  },
+  notFound: { title: "Page not found", text: "The page you're looking for doesn't exist.", back: "Back to home" },
+  meta: {
+    home: { title: "Umrah & Airport Transfers in Saudi Arabia", description: "Private Umrah transportation, airport transfers and intercity travel between Makkah, Madinah, Jeddah and Riyadh. Sedans, SUVs, vans and buses. Book on WhatsApp." },
+    about: { title: "About Us", description: "Saudi Transport Group provides private transport for pilgrims, families and corporate clients across Saudi Arabia and the GCC." },
+    services: { title: "Transport Services", description: "Airport transfers, Umrah transportation, ziyarat, chauffeur, corporate and cross-border GCC transport in Saudi Arabia." },
+    fleet: { title: "Fleet: Sedans, SUVs, Vans & Buses", description: "Browse our vehicle categories — sedans, SUVs, luxury cars, vans, minibuses and buses for groups of every size." },
+    contact: { title: "Contact", description: "Contact Saudi Transport Group by WhatsApp, phone or email to arrange transport in Saudi Arabia." },
+    quote: { title: "Get a Quote", description: "Request a transport quote for Umrah, airport transfers or intercity travel in Saudi Arabia. Reply by WhatsApp." },
+  },
+};
+
+export type Dict = typeof en;
+
+const ar: Dict = {
+  skip: "انتقل إلى المحتوى الرئيسي",
+  nav: {
+    home: "الرئيسية", about: "من نحن", services: "الخدمات", fleet: "الأسطول",
+    airport: "التوصيل من وإلى المطار", umrah: "النقل للعمرة", ziyarat: "الزيارات",
+    chauffeur: "سائق خاص", corporate: "نقل الشركات", contact: "اتصل بنا", quote: "اطلب عرض سعر",
+    menu: "القائمة", close: "إغلاق القائمة", language: "English", primary: "التنقل الرئيسي",
+  },
+  cta: {
+    quote: "اطلب عرض سعر", whatsapp: "احجز عبر واتساب", call: "اتصل الآن",
+    learnMore: "اعرف المزيد", viewAll: "عرض جميع الخدمات", viewFleet: "عرض الأسطول",
+    requestVehicle: "اطلب هذه المركبة", bookService: "احجز هذه الخدمة",
+  },
+  home: {
+    eyebrow: "المملكة العربية السعودية ودول الخليج",
+    title: "نقل خاص موثوق في جميع أنحاء المملكة",
+    subtitle: "خدمات نقل للعمرة والمطارات والرحلات بين المدن بين مكة المكرمة والمدينة المنورة وجدة والرياض، مع سائقين محترفين ومركبات تناسب كل مجموعة.",
+    servicesTitle: "خدمات نقل لكل رحلة",
+    servicesLead: "من استقبال واحد في المطار إلى برنامج كامل لمجموعات المعتمرين، نرتب لك المركبة والسائق.",
+    fleetTitle: "مركبة تناسب كل حجم مجموعة",
+    fleetLead: "سيدان، دفع رباعي، فانات، حافلات صغيرة وكبيرة — أخبرنا بعدد الركاب ونقترح لك الأنسب.",
+    whyTitle: "لماذا يختارنا المسافرون",
+    processTitle: "كيف يتم الحجز",
+    routesTitle: "المدن والمسارات الشائعة",
+    faqTitle: "الأسئلة الشائعة",
+    ctaTitle: "هل أنت جاهز لتخطيط رحلتك؟",
+    ctaText: "أرسل لنا المسار والتاريخ وعدد الركاب، وسنرد عليك بعرض سعر واضح دون أي التزام.",
+  },
+  why: [
+    { t: "حجز بسيط", d: "احجز عبر واتساب أو الهاتف أو نموذج عرض السعر — بالطريقة الأسهل لك." },
+    { t: "مركبات لكل حجم مجموعة", d: "من السيارات الخاصة إلى الحافلات الكبيرة لمجموعات المعتمرين وفرق الشركات." },
+    { t: "دعم بالعربية والإنجليزية", d: "يتواصل فريقنا معك باللغتين العربية والإنجليزية." },
+    { t: "عروض أسعار واضحة", d: "تصلك تفاصيل المسار والمركبة والسعر مؤكدة قبل السفر." },
+  ],
+  steps: [
+    { t: "أرسل طلبك", d: "شاركنا المسار والتاريخ والوقت وعدد الركاب عبر واتساب أو النموذج." },
+    { t: "استلم عرض السعر", d: "نؤكد لك نوع المركبة والسعر المناسب لرحلتك." },
+    { t: "أكّد حجزك", d: "وافق على التفاصيل وسنخصص لك المركبة والسائق." },
+    { t: "سافر براحة", d: "يستقبلك السائق في الوقت والمكان المتفق عليهما." },
+  ],
+  fleet: {
+    title: "أسطولنا", lead: "مركبات للأفراد والعائلات والمجموعات والشركات. السعات تقريبية، ونؤكد المركبة المحددة عند الحجز.",
+    passengers: "الركاب", luggage: "الأمتعة", upTo: "حتى", bestFor: "الأنسب لـ",
+    note: "تختلف الموديلات المتاحة حسب التاريخ والمسار. تواصل معنا لتأكيد المركبة التي تفضلها.",
+  },
+  services: { title: "خدماتنا", lead: "نقل خاص في المملكة ودول الخليج، مرتب وفق جدولك.", includes: "ما تشمله الخدمة", idealFor: "مناسبة لـ", related: "خدمات ذات صلة", faqs: "أسئلة شائعة" },
+  locations: { title: "خدمات النقل في", lead: "توصيل خاص ونقل للعمرة واستقبال من المطار", servicesIn: "الخدمات المتاحة في", other: "مواقع أخرى" },
+  about: {
+    title: "عن المجموعة السعودية للنقل",
+    lead: "مزود نقل سعودي يخدم المعتمرين والعائلات والشركات في المملكة ودول الخليج.",
+    p1: "تنظّم المجموعة السعودية للنقل خدمات النقل البري الخاص للمعتمرين والزوار والعائلات والشركات، وتشمل التوصيل من وإلى المطارات، والنقل في مكة المكرمة والمدينة المنورة، وجولات الزيارات، وخدمة السائق الخاص، والنقل بين دول الخليج.",
+    p2: "تركيزنا واضح: المركبة المناسبة، وسائق محترف، وتواصل واضح من أول رسالة حتى الوصول.",
+    valuesTitle: "ما نركز عليه",
+    values: [
+      { t: "الموثوقية", d: "استقبال مخطط له وتأكيدات واضحة لتعرف ما تتوقعه." },
+      { t: "الراحة", d: "مركبات نظيفة ومناسبة لحجم مجموعتك وأمتعتك." },
+      { t: "احترام المعتمرين", d: "نتفهم طبيعة رحلة العمرة ونخطط وفقها." },
+      { t: "الشفافية", d: "أسعار مؤكدة قبل السفر دون مفاجآت." },
+    ],
+  },
+  contact: {
+    title: "اتصل بنا", lead: "تواصل مع فريقنا عبر واتساب أو الهاتف أو البريد الإلكتروني وسنرد في أقرب وقت.",
+    phone: "الهاتف", whatsapp: "واتساب", email: "البريد الإلكتروني", hours: "أوقات الاستقبال", hoursValue: "نستقبل الاستفسارات على مدار الساعة",
+    enquiryTitle: "أرسل استفسارك",
+  },
+  quotePage: { title: "اطلب عرض سعر", lead: "أخبرنا عن رحلتك وسنؤكد لك المركبة والسعر عبر واتساب أو الهاتف أو البريد." },
+  form: {
+    name: "الاسم الكامل", phone: "الهاتف / واتساب", email: "البريد الإلكتروني (اختياري)", service: "الخدمة", vehicle: "المركبة المفضلة",
+    pickup: "موقع الاستقبال", dropoff: "موقع التوصيل", date: "تاريخ السفر", time: "وقت الاستقبال",
+    passengers: "عدد الركاب", luggage: "الحقائب", notes: "تفاصيل إضافية", any: "أي نوع / لست متأكداً",
+    select: "اختر…", submit: "إرسال عبر واتساب", sending: "جارٍ الإرسال…",
+    success: "شكراً لك — طلبك جاهز. يفترض أن يفتح واتساب بتفاصيلك؛ وإن لم يفتح فاستخدم الزر أدناه.",
+    openWa: "افتح واتساب", error: "يرجى تصحيح الحقول المحددة.", failed: "حدث خطأ ما. يرجى التواصل معنا عبر واتساب أو الهاتف.",
+    required: "هذا الحقل مطلوب", invalidPhone: "أدخل رقم هاتف صحيحاً", invalidEmail: "أدخل بريداً إلكترونياً صحيحاً",
+    privacy: "نستخدم بياناتك فقط للرد على طلبك.",
+  },
+  footer: {
+    tagline: "نقل خاص للعمرة والمطارات والرحلات بين المدن ورحلات الشركات في المملكة ودول الخليج.",
+    services: "الخدمات", company: "الشركة", contact: "التواصل", rights: "جميع الحقوق محفوظة.", locations: "المواقع",
+  },
+  notFound: { title: "الصفحة غير موجودة", text: "الصفحة التي تبحث عنها غير موجودة.", back: "العودة إلى الرئيسية" },
+  meta: {
+    home: { title: "نقل العمرة والمطارات في السعودية", description: "نقل خاص للعمرة والمطارات والرحلات بين مكة المكرمة والمدينة المنورة وجدة والرياض. سيدان ودفع رباعي وفانات وحافلات. احجز عبر واتساب." },
+    about: { title: "من نحن", description: "المجموعة السعودية للنقل تقدم خدمات نقل خاص للمعتمرين والعائلات والشركات في المملكة ودول الخليج." },
+    services: { title: "خدمات النقل", description: "التوصيل من وإلى المطار، النقل للعمرة، الزيارات، السائق الخاص، نقل الشركات والنقل بين دول الخليج." },
+    fleet: { title: "الأسطول: سيدان ودفع رباعي وفانات وحافلات", description: "تعرف على فئات مركباتنا من سيدان ودفع رباعي وسيارات فاخرة وفانات وحافلات لمجموعات بجميع الأحجام." },
+    contact: { title: "اتصل بنا", description: "تواصل مع المجموعة السعودية للنقل عبر واتساب أو الهاتف أو البريد لترتيب النقل في المملكة." },
+    quote: { title: "اطلب عرض سعر", description: "اطلب عرض سعر للنقل للعمرة أو المطارات أو الرحلات بين المدن في السعودية. نرد عبر واتساب." },
+  },
+};
+
+const dicts: Record<Lang, Dict> = { en, ar };
+export const getDict = (lang: Lang): Dict => dicts[lang];

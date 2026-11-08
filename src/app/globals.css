@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #0a1726;
+  --color-navy-900: #10243a;
+  --color-navy-800: #173b5e;
+  --color-navy-700: #2a5580;
+  --color-navy-600: #3d6d9e;
+  --color-navy-100: #e1e7ee;
+  --color-navy-50: #f5f7fa;
+  --color-gold-300: #e2cc94;
+  --color-gold-400: #d6b566;
+  --color-gold-500: #c9a14a;
+  --color-gold-600: #8a6a1f;
+  --color-ink: #182433;
+  --color-muted: #64748b;
+  --font-sans: var(--font-poppins), var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+html { scroll-behavior: smooth; }
+html[dir="rtl"] body { font-family: var(--font-arabic), var(--font-poppins), sans-serif; }
+body { background: #fff; color: var(--color-ink); -webkit-font-smoothing: antialiased; }
+
+:focus-visible { outline: 3px solid var(--color-gold-500); outline-offset: 2px; border-radius: 4px; }
+
+/* Progressive-enhancement scroll reveal: content stays visible without support. */
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 35%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .animate-fade-up { animation: none !important; }
+  * { transition-duration: 0.01ms !important; }
+}
+
+/* Group flow diagram: lines draw in when the coordinated view is shown. */
+.flow-line {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: draw-line 0.9s ease-out forwards;
+}
+@keyframes draw-line {
+  to { stroke-dashoffset: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flow-line { animation: none; stroke-dashoffset: 0; }
+}
+
+/* Intercity hero: dashes travel along the route line. */
+.route-flow { animation: route-dash 2.4s linear infinite; }
+@keyframes route-dash { to { stroke-dashoffset: -44; } }
+@media (prefers-reduced-motion: reduce) { .route-flow { animation: none; } }

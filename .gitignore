@@ -1,0 +1,8 @@
+node_modules
+dist
+.next
+.cloudflare
+.wrangler
+.env*.local
+*.tsbuildinfo
+.vinext
