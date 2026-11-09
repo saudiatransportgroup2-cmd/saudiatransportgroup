@@ -24,6 +24,8 @@ const pages = [
   "arrival-day-checklist",
   "corporate-transport",
   "trip-support",
+  "ur",
+  "id",
 ];
 
 const get = (html, re) => html.match(re)?.[1]?.replace(/&amp;/g, "&").trim() ?? "";

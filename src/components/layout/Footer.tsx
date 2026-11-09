@@ -52,6 +52,7 @@ export function Footer({ lang }: { lang: Lang }) {
               <li><Link className={linkCls} href="/travel-tools">{lang === "ar" ? "أدوات السفر المجانية" : "Free travel tools"}</Link></li>
               <li><Link className={linkCls} href="/corporate-transport">{lang === "ar" ? "نقل الشركات" : "Corporate transport"}</Link></li>
               <li><Link className={linkCls} href="/trip-support">{lang === "ar" ? "دعم الرحلة" : "Trip support"}</Link></li>
+              <li><Link className={linkCls} href="/ur" lang="ur">اردو</Link> · <Link className={linkCls} href="/id" lang="id">Bahasa Indonesia</Link></li>
               <li><Link className={linkCls} href="/agencies">{lang === "ar" ? "للوكالات والمنظمين" : "For agencies"}</Link></li>
             </ul>
             <h2 className="mb-4 mt-8 text-sm font-semibold uppercase tracking-wider text-gold-400">{lang === "ar" ? "مسارات شائعة" : "Popular routes"}</h2>
