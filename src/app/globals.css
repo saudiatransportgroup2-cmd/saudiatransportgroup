@@ -68,6 +68,6 @@ main .grid > * { min-width: 0; }
 /* Printable driver card: when printing, show only the card. */
 @media print {
   body * { visibility: hidden; }
-  #driver-card, #driver-card * { visibility: visible; }
-  #driver-card { position: absolute; inset: 0 auto auto 0; width: 100%; box-shadow: none; }
+  #driver-card, #driver-card *, [data-print-target], [data-print-target] * { visibility: visible; }
+  #driver-card, [data-print-target] { position: absolute; inset: 0 auto auto 0; width: 100%; box-shadow: none; }
 }
