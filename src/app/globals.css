@@ -64,3 +64,10 @@ body { background: #fff; color: var(--color-ink); -webkit-font-smoothing: antial
 /* Grid items may shrink below their content's minimum width. Prevents very narrow phones
    (320px) from scrolling sideways because of wide form controls or long words. */
 main .grid > * { min-width: 0; }
+
+/* Printable driver card: when printing, show only the card. */
+@media print {
+  body * { visibility: hidden; }
+  #driver-card, #driver-card * { visibility: visible; }
+  #driver-card { position: absolute; inset: 0 auto auto 0; width: 100%; box-shadow: none; }
+}

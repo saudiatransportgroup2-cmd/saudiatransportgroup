@@ -50,6 +50,7 @@ export function Footer({ lang }: { lang: Lang }) {
                 </li>
               ))}
               <li><Link className={linkCls} href="/umrah-trip-planner">{lang === "ar" ? "مخطط رحلة العمرة" : "Umrah trip planner"}</Link></li>
+              <li><Link className={linkCls} href="/driver-card">{lang === "ar" ? "بطاقة السائق المطبوعة" : "Free driver card"}</Link></li>
               <li><Link className={linkCls} href="/agencies">{lang === "ar" ? "للوكالات والمنظمين" : "For agencies"}</Link></li>
             </ul>
             <h2 className="mb-4 mt-8 text-sm font-semibold uppercase tracking-wider text-gold-400">{lang === "ar" ? "مسارات شائعة" : "Popular routes"}</h2>
