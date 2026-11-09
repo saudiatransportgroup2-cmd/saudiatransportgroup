@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { Check, Copy, MessageCircle, Plus, Printer, Trash2 } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Check, Copy, Link2, MessageCircle, Plus, Printer, Trash2 } from "lucide-react";
 import { enquiryLink } from "@/lib/booking";
 
 const kinds = [
@@ -45,6 +45,43 @@ export function TripBuilder() {
   const [bags, setBags] = useState("2");
   const [needs, setNeeds] = useState("");
   const [copied, setCopied] = useState(false);
+  const [linkCopied, setLinkCopied] = useState(false);
+
+  // Restore a plan shared through the link (#plan=...). The data lives only in the link itself.
+  useEffect(() => {
+    try {
+      const m = /^#plan=(.+)$/.exec(window.location.hash);
+      if (!m) return;
+      const data = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(m[1])))));
+      if (!Array.isArray(data.legs) || data.legs.length === 0 || data.legs.length > 12) return;
+      const clean = (v: unknown, max = 200) => (typeof v === "string" ? v.slice(0, max) : "");
+      setLegs(
+        data.legs.map((l: Partial<Leg>, i: number) => ({
+          id: i + 1,
+          kind: kinds.includes(l.kind as Leg["kind"]) ? (l.kind as Leg["kind"]) : "Other journey",
+          when: clean(l.when, 16), from: clean(l.from), to: clean(l.to), flight: clean(l.flight, 20), note: clean(l.note),
+        })),
+      );
+      setNextId(data.legs.length + 1);
+      setPax(clean(data.pax, 3) || "2");
+      setBags(clean(data.bags, 3) || "2");
+      setNeeds(clean(data.needs));
+    } catch {
+      /* a damaged link simply leaves the default plan */
+    }
+  }, []);
+
+  async function copyLink() {
+    try {
+      const payload = btoa(unescape(encodeURIComponent(JSON.stringify({ legs, pax, bags, needs }))));
+      const url = `${window.location.origin}${window.location.pathname}#plan=${encodeURIComponent(payload)}`;
+      await navigator.clipboard.writeText(url);
+      setLinkCopied(true);
+      setTimeout(() => setLinkCopied(false), 2000);
+    } catch {
+      /* clipboard unavailable: Copy plan and WhatsApp still work */
+    }
+  }
 
   const update = (id: number, patch: Partial<Leg>) => setLegs((ls) => ls.map((l) => (l.id === id ? { ...l, ...patch } : l)));
   const remove = (id: number) => setLegs((ls) => ls.filter((l) => l.id !== id));
@@ -140,12 +177,15 @@ export function TripBuilder() {
         <button type="button" onClick={copy} className="flex min-h-12 items-center justify-center gap-2 rounded-full border border-navy-200 px-6 text-sm font-semibold text-navy-900 hover:border-gold-500">
           {copied ? <Check className="size-4" aria-hidden /> : <Copy className="size-4" aria-hidden />} {copied ? "Copied" : "Copy plan"}
         </button>
+        <button type="button" onClick={copyLink} className="flex min-h-12 items-center justify-center gap-2 rounded-full border border-navy-200 px-6 text-sm font-semibold text-navy-900 hover:border-gold-500">
+          {linkCopied ? <Check className="size-4" aria-hidden /> : <Link2 className="size-4" aria-hidden />} {linkCopied ? "Link copied" : "Copy share link"}
+        </button>
         <button type="button" onClick={() => window.print()} className="flex min-h-12 items-center justify-center gap-2 rounded-full border border-navy-200 px-6 text-sm font-semibold text-navy-900 hover:border-gold-500">
           <Printer className="size-4" aria-hidden /> Print or save as PDF
         </button>
       </div>
       <p className="mt-4 text-xs leading-relaxed text-muted">
-        Nothing is stored on this page. This is a request, not a booking: we reply to confirm vehicles, timings and price for every journey before you travel.
+        Nothing is stored on our servers. The share link holds your plan inside the link itself, so share it only with people you trust. This is a request, not a booking: we reply to confirm vehicles, timings and price for every journey before you travel.
       </p>
     </form>
   );
