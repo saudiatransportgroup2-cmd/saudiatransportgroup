@@ -8,6 +8,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingActions } from "@/components/layout/FloatingActions";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { Analytics } from "@/components/seo/Analytics";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
         <main id="main">{children}</main>
         <Footer lang="en" />
         <FloatingActions lang="en" />
+        <Analytics />
         <JsonLd data={localBusinessSchema("en")} />
       </body>
     </html>

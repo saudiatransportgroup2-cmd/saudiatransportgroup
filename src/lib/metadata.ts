@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { site, type Lang } from "@/config/site";
 import { href } from "@/i18n/config";
 
+const ogImage = { url: "/og.png", width: 1200, height: 630, alt: "Saudi Transport Group: private transport across Saudi Arabia" };
+
 export const absoluteUrl = (path: string) => `${site.url}${path}`;
 
 interface Args {
@@ -37,8 +39,9 @@ export function buildMetadata({ lang, path = "", title, description, absoluteTit
       description,
       locale: lang === "ar" ? "ar_SA" : "en_SA",
       alternateLocale: other === "ar" ? "ar_SA" : "en_SA",
+      images: [ogImage],
     },
-    twitter: { card: "summary_large_image", title: fullTitle, description },
+    twitter: { card: "summary_large_image", title: fullTitle, description, images: [ogImage.url] },
   };
 }
 
@@ -50,7 +53,7 @@ export function buildPageMetadata({ path, title, description }: { path: string; 
     title: { absolute: full },
     description,
     alternates: { canonical: url },
-    openGraph: { type: "website", url, siteName: site.name.en, title: full, description, locale: "en_SA" },
-    twitter: { card: "summary_large_image", title: full, description },
+    openGraph: { type: "website", url, siteName: site.name.en, title: full, description, locale: "en_SA", images: [ogImage] },
+    twitter: { card: "summary_large_image", title: full, description, images: [ogImage.url] },
   };
 }

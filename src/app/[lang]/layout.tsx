@@ -9,6 +9,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingActions } from "@/components/layout/FloatingActions";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { Analytics } from "@/components/seo/Analytics";
 import { arabic, poppins } from "@/lib/fonts";
 import "../globals.css";
 
@@ -60,6 +61,7 @@ export default async function LangLayout({
         <main id="main">{children}</main>
         <Footer lang={lang} />
         <FloatingActions lang={lang} />
+        <Analytics />
         <JsonLd data={localBusinessSchema(lang)} />
       </body>
     </html>

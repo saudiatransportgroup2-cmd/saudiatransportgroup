@@ -74,9 +74,13 @@ export function Footer({ lang }: { lang: Lang }) {
           </div>
         </div>
 
-        <p className="mt-14 border-t border-white/10 pt-6 text-xs text-white/50">
-          © {new Date().getFullYear()} {site.name[lang]}. {t.footer.rights}
-        </p>
+        <div className="mt-14 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {new Date().getFullYear()} {site.name[lang]}. {t.footer.rights}</p>
+          <p className="flex gap-5">
+            <Link className="hover:text-gold-300" href="/privacy">{lang === "ar" ? "الخصوصية" : "Privacy"}</Link>
+            <Link className="hover:text-gold-300" href="/terms">{lang === "ar" ? "الشروط" : "Terms"}</Link>
+          </p>
+        </div>
       </Container>
     </footer>
   );

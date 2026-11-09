@@ -18,5 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly" as const,
     priority: 0.9,
   }));
-  return [...localized, ...servicePages];
+  const legal = ["/privacy", "/terms"].map((p) => ({ url: `${site.url}${p}`, changeFrequency: "yearly" as const, priority: 0.3 }));
+  return [...localized, ...servicePages, ...legal];
 }

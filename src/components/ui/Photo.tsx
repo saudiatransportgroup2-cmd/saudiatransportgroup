@@ -50,6 +50,8 @@ export function Photo({
         </defs>
         <rect width="100%" height="100%" fill={`url(#p-${id})`} />
       </svg>
+      {/* The slot label only helps while building. It is hidden on the live site. */}
+      {process.env.NODE_ENV !== "production" && (
       <span
         className={cx(
           "absolute bottom-3 start-3 flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-widest",
@@ -58,6 +60,7 @@ export function Photo({
       >
         <Camera className="size-3" aria-hidden /> {id}
       </span>
+      )}
     </div>
   );
 }
