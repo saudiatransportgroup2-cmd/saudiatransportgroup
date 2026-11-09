@@ -1,8 +1,10 @@
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/primitives";
 
 const tickets = [
   {
+    href: "/routes/jeddah-airport-to-makkah",
     from: "Jeddah Airport",
     to: "Makkah",
     kicker: "The most common first leg",
@@ -13,6 +15,7 @@ const tickets = [
     ],
   },
   {
+    href: "/routes/madinah-airport-to-hotel",
     from: "Madinah Airport",
     to: "Your hotel",
     kicker: "Direct to the Prophet’s city",
@@ -23,6 +26,7 @@ const tickets = [
     ],
   },
   {
+    href: "/routes/makkah-to-madinah",
     from: "Makkah",
     to: "Madinah",
     kicker: "A long road with time to rest",
@@ -86,6 +90,9 @@ export function RouteTickets() {
                       </li>
                     ))}
                   </ul>
+                  {"href" in t && t.href && (
+                    <Link href={t.href} className="mt-5 inline-block text-sm font-semibold text-navy-900 underline decoration-gold-500 underline-offset-4">Read the full route guide →</Link>
+                  )}
                 </div>
               </article>
             </li>

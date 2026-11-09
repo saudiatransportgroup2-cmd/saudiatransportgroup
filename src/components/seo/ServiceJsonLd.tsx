@@ -7,12 +7,15 @@ export function ServiceJsonLd({
   path,
   serviceType,
   faqs,
+  parent,
 }: {
   name: string;
   description: string;
   path: string;
   serviceType: string;
   faqs: { q: string; a: string }[];
+  /** Optional middle breadcrumb. Defaults to Services. */
+  parent?: { name: string; path: string };
 }) {
   return (
     <JsonLd
@@ -21,7 +24,7 @@ export function ServiceJsonLd({
         faqSchema(faqs),
         breadcrumbSchema([
           { name: "Home", path: "/en" },
-          { name: "Services", path: "/en/services" },
+          parent ?? { name: "Services", path: "/en/services" },
           { name, path },
         ]),
       ]}

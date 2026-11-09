@@ -10,6 +10,10 @@ const pages = [
   "services/group-transfers",
   "services/city-to-city-transfer",
   "private-chauffeur-hire",
+  "routes/jeddah-airport-to-makkah",
+  "routes/makkah-to-madinah",
+  "routes/madinah-airport-to-hotel",
+  "agencies",
 ];
 
 const get = (html, re) => html.match(re)?.[1]?.replace(/&amp;/g, "&").trim() ?? "";

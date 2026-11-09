@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly" as const,
     priority: 0.9,
   }));
+  // Hand-written route guides and the agencies page.
+  const extra = ["/routes/jeddah-airport-to-makkah", "/routes/makkah-to-madinah", "/routes/madinah-airport-to-hotel", "/agencies"].map((p) => ({ url: `${site.url}${p}`, changeFrequency: "monthly" as const, priority: 0.7 }));
   const legal = ["/privacy", "/terms"].map((p) => ({ url: `${site.url}${p}`, changeFrequency: "yearly" as const, priority: 0.3 }));
-  return [...localized, ...servicePages, ...legal];
+  return [...localized, ...servicePages, ...extra, ...legal];
 }
