@@ -14,6 +14,16 @@ const pages = [
   "routes/makkah-to-madinah",
   "routes/madinah-airport-to-hotel",
   "agencies",
+  "umrah-trip-planner",
+  "driver-card",
+  "prayer-time-journey-planner",
+  "umrah-season-calendar",
+  "travel-tools",
+  "compare-transport-quotes",
+  "check-transport-licence",
+  "arrival-day-checklist",
+  "corporate-transport",
+  "trip-support",
 ];
 
 const get = (html, re) => html.match(re)?.[1]?.replace(/&amp;/g, "&").trim() ?? "";

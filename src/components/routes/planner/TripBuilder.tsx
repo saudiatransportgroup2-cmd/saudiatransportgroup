@@ -128,10 +128,10 @@ export function TripBuilder() {
         {legs.map((l, i) => (
           <li key={l.id} className="rounded-xl border border-navy-100 bg-[#f5f7fa] p-4 sm:p-5">
             <div className="flex items-center justify-between gap-3">
-              <h3 className="flex items-center gap-3 text-sm font-semibold text-navy-900">
+              <h2 className="flex items-center gap-3 text-sm font-semibold text-navy-900">
                 <span className="grid size-7 place-items-center rounded-full bg-navy-900 text-xs text-gold-300">{i + 1}</span>
                 Journey {i + 1}
-              </h3>
+              </h2>
               {legs.length > 1 && (
                 <button type="button" onClick={() => remove(l.id)} className="flex min-h-11 items-center gap-1.5 px-2 text-xs font-semibold text-muted hover:text-navy-900">
                   <Trash2 className="size-4" aria-hidden /> Remove

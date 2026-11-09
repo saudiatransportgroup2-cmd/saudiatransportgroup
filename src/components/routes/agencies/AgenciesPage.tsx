@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Crumbs } from "@/components/navigation/Crumbs";
 import { Container } from "@/components/ui/primitives";
 import { AgencyEnquiry } from "./AgencyEnquiry";
+import { ManifestTool } from "./ManifestTool";
 
 export const agencyFaqs: { q: string; a: string }[] = [
   {
@@ -130,6 +131,16 @@ export function AgenciesPage() {
               </div>
             ))}
           </dl>
+        </Container>
+      </section>
+
+      <section className="bg-white py-20 sm:py-24" aria-labelledby="ag-manifest">
+        <Container className="max-w-4xl">
+          <h2 id="ag-manifest" className="text-3xl font-semibold tracking-tight text-navy-900 sm:text-4xl">Send several groups at once</h2>
+          <p className="mt-5 text-base leading-[1.9] text-muted">
+            Paste your groups, one per line, and we turn them into a single tidy message. You can copy lines from a spreadsheet.
+          </p>
+          <div className="mt-8"><ManifestTool /></div>
         </Container>
       </section>
 

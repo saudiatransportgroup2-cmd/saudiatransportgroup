@@ -49,10 +49,9 @@ export function Footer({ lang }: { lang: Lang }) {
                   </Link>
                 </li>
               ))}
-              <li><Link className={linkCls} href="/umrah-trip-planner">{lang === "ar" ? "مخطط رحلة العمرة" : "Umrah trip planner"}</Link></li>
-              <li><Link className={linkCls} href="/prayer-time-journey-planner">{lang === "ar" ? "مخطط الرحلة حسب أوقات الصلاة" : "Prayer-time journey planner"}</Link></li>
-              <li><Link className={linkCls} href="/umrah-season-calendar">{lang === "ar" ? "تقويم موسم العمرة" : "Umrah season calendar"}</Link></li>
-              <li><Link className={linkCls} href="/driver-card">{lang === "ar" ? "بطاقة السائق المطبوعة" : "Free driver card"}</Link></li>
+              <li><Link className={linkCls} href="/travel-tools">{lang === "ar" ? "أدوات السفر المجانية" : "Free travel tools"}</Link></li>
+              <li><Link className={linkCls} href="/corporate-transport">{lang === "ar" ? "نقل الشركات" : "Corporate transport"}</Link></li>
+              <li><Link className={linkCls} href="/trip-support">{lang === "ar" ? "دعم الرحلة" : "Trip support"}</Link></li>
               <li><Link className={linkCls} href="/agencies">{lang === "ar" ? "للوكالات والمنظمين" : "For agencies"}</Link></li>
             </ul>
             <h2 className="mb-4 mt-8 text-sm font-semibold uppercase tracking-wider text-gold-400">{lang === "ar" ? "مسارات شائعة" : "Popular routes"}</h2>
