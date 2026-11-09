@@ -23,8 +23,8 @@ export function VehicleCard({ lang, v, showCta }: { lang: Lang; v: Vehicle; show
         <p className="mt-2 text-sm leading-relaxed text-navy-700/80">{v.desc[lang]}</p>
         <dl className="mt-5 grid grid-cols-2 gap-3 text-sm">
           <div className="rounded-xl bg-navy-50 p-3">
-            <dt className="flex items-center gap-1.5 text-xs text-navy-700/70"><Users className="size-3.5" aria-hidden /> {t.fleet.passengers}</dt>
-            <dd className="mt-1 font-semibold">{v.passengers}</dd>
+            <dt className="flex items-center gap-1.5 text-xs text-navy-700/70"><Users className="size-3.5" aria-hidden /> {t.fleet.group}</dt>
+            <dd className="mt-1 font-semibold">{v.group[lang]}</dd>
           </div>
           <div className="rounded-xl bg-navy-50 p-3">
             <dt className="flex items-center gap-1.5 text-xs text-navy-700/70"><Luggage className="size-3.5" aria-hidden /> {t.fleet.luggage}</dt>

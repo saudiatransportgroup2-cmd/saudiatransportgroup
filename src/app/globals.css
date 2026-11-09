@@ -60,3 +60,7 @@ body { background: #fff; color: var(--color-ink); -webkit-font-smoothing: antial
 .route-flow { animation: route-dash 2.4s linear infinite; }
 @keyframes route-dash { to { stroke-dashoffset: -44; } }
 @media (prefers-reduced-motion: reduce) { .route-flow { animation: none; } }
+
+/* Grid items may shrink below their content's minimum width. Prevents very narrow phones
+   (320px) from scrolling sideways because of wide form controls or long words. */
+main .grid > * { min-width: 0; }

@@ -8,7 +8,7 @@ export function Logo({ name, dark }: { name: string; dark?: boolean }) {
         <circle cx="15" cy="28" r="2.6" fill="#0a1a33" />
         <circle cx="25" cy="28" r="2.6" fill="#0a1a33" />
       </svg>
-      <span className={`min-w-0 truncate text-[15px] font-semibold leading-tight tracking-tight max-[380px]:text-[13px] ${dark ? "text-navy-900" : "text-white"}`}>
+      <span className={`min-w-0 text-[15px] font-semibold leading-tight tracking-tight max-[380px]:text-[13px] ${dark ? "text-navy-900" : "text-white"}`}>
         {name}
       </span>
     </span>

@@ -13,7 +13,7 @@ const airports = [
 ];
 
 const field =
-  "block min-h-11 w-full rounded-lg border border-navy-100 bg-white px-3 text-sm text-ink focus:border-gold-500";
+  "block min-h-11 w-full min-w-0 max-w-full rounded-lg border border-navy-100 bg-white px-3 text-sm text-ink focus:border-gold-500";
 
 /** Arrivals-board style panel that turns trip details into a prefilled WhatsApp enquiry. */
 export function PickupPlanner() {
