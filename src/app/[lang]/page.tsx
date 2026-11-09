@@ -79,6 +79,20 @@ export default async function HomePage({ params }: Props) {
         <Steps lang={lang} />
       </Section>
 
+      <Section labelledBy="planner-h">
+        <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
+          <div className="max-w-2xl">
+            <h2 id="planner-h" className="text-3xl font-semibold tracking-tight sm:text-4xl">{lang === "ar" ? "خطط لكل تنقلات رحلة العمرة" : "Plan every journey of your Umrah"}</h2>
+            <p className="mt-4 text-base leading-relaxed text-navy-700/80">
+              {lang === "ar"
+                ? "أضف المطار ومكة والمدينة والمغادرة في طلب واحد، وأرسله برسالة واحدة على واتساب."
+                : "Add the airport, Makkah, Madinah and departure in one request and send it as a single WhatsApp message."}
+            </p>
+          </div>
+          <ButtonLink href="/umrah-trip-planner" variant="navy" arrow>{lang === "ar" ? "افتح مخطط الرحلة" : "Open the trip planner"}</ButtonLink>
+        </div>
+      </Section>
+
       <Section tone="soft" labelledBy="agencies-h">
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
           <div className="max-w-2xl">
