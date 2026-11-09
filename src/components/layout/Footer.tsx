@@ -50,6 +50,7 @@ export function Footer({ lang }: { lang: Lang }) {
                 </li>
               ))}
               <li><Link className={linkCls} href="/umrah-trip-planner">{lang === "ar" ? "مخطط رحلة العمرة" : "Umrah trip planner"}</Link></li>
+              <li><Link className={linkCls} href="/prayer-time-journey-planner">{lang === "ar" ? "مخطط الرحلة حسب أوقات الصلاة" : "Prayer-time journey planner"}</Link></li>
               <li><Link className={linkCls} href="/driver-card">{lang === "ar" ? "بطاقة السائق المطبوعة" : "Free driver card"}</Link></li>
               <li><Link className={linkCls} href="/agencies">{lang === "ar" ? "للوكالات والمنظمين" : "For agencies"}</Link></li>
             </ul>
