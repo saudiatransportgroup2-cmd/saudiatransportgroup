@@ -35,6 +35,22 @@ export default function PrivacyPage() {
         When you submit the form, your details are put into a WhatsApp message that opens on your device, and are also sent to our website server so that the enquiry is not lost. The server passes the enquiry on to our team, and may record it in our hosting logs.
       </p>
 
+      <h2>Free planning tools and share links</h2>
+      <p>
+        Our trip planner, prayer-time planner, driver card, season calendar, checklists and the group list tool work in your browser. What you type into them is not sent to our servers or stored by us. It only reaches us if you press a button that opens WhatsApp with your details, and then you choose whether to send it.
+      </p>
+      <p>
+        The trip planner can create a share link. That link contains the plan you entered, such as journeys, places, dates, flight numbers and notes, inside the link itself. Anyone who has the link can read it, so share it only with people you trust. We do not keep a copy.
+      </p>
+
+      <h2>Trip confirmation links</h2>
+      <p>
+        When we confirm a trip with you, our team may send you a confirmation link. The link contains the details we agreed, such as your name, journeys, dates, flight numbers, vehicle, price and, when known, the driver’s name and phone number. It is protected by a signature so that it cannot be altered without showing as unverified. We do not store the confirmation on our servers.
+      </p>
+      <p>
+        Anyone who has the link can read it. Please share it only with people who travel with you. A link cannot be withdrawn after it is sent: if the trip changes, we send a new confirmation and the latest one replaces the earlier one. These pages are hidden from search engines.
+      </p>
+
       <h2>Services that handle data for us</h2>
       <ul>
         <li><strong>WhatsApp</strong> (Meta) carries the messages you send. Their own privacy policy applies to that service.</li>
