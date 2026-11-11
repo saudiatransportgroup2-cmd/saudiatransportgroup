@@ -159,12 +159,12 @@ export function EnquiryForm({ lang, t, services, vehicles, compact }: Props) {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-[#1f9d55] px-8 text-sm font-semibold text-white transition-colors hover:bg-[#188046] disabled:opacity-60 sm:w-auto"
+          className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-[#15803d] px-8 text-sm font-semibold text-white transition-colors hover:bg-[#166534] disabled:opacity-60 sm:w-auto"
         >
           <MessageCircle className="size-4" aria-hidden />
           {status === "sending" ? t.sending : t.submit}
         </button>
-        <p className="mt-3 text-xs text-navy-700/70">{t.privacy}</p>
+        <p className="mt-3 text-xs text-navy-700">{t.privacy}</p>
         <div id={`${uid}-status`} role="status" aria-live="polite" className="mt-4">
           {Object.keys(errors).length > 0 && status === "idle" && <p className="text-sm text-red-600">{t.error}</p>}
           {status === "done" && (

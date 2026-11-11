@@ -32,7 +32,7 @@ export function PilgrimLanding({ c }: { c: PilgrimContent }) {
               <h1 className="mt-5 text-3xl font-semibold leading-[1.35] tracking-tight text-navy-900 sm:text-5xl sm:leading-[1.25]">{c.hero.title}</h1>
               <p className="mt-6 max-w-xl text-base leading-[2] text-muted sm:text-lg">{c.hero.lead}</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a href={wa} target="_blank" rel="noopener noreferrer" className="flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#1f9d55] px-7 text-sm font-semibold text-white hover:bg-[#188046]">
+                <a href={wa} target="_blank" rel="noopener noreferrer" className="flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#15803d] px-7 text-sm font-semibold text-white hover:bg-[#166534]">
                   <MessageCircle className="size-4" aria-hidden /> {c.hero.whatsapp}
                 </a>
                 <a href={telHref} className="flex min-h-12 items-center justify-center gap-2 rounded-full border border-navy-200 px-7 text-sm font-semibold text-navy-900 hover:border-gold-500">
@@ -127,7 +127,7 @@ export function PilgrimLanding({ c }: { c: PilgrimContent }) {
 
       <div className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-2 gap-px bg-navy-950 shadow-[0_-4px_20px_rgba(0,0,0,0.25)] lg:hidden">
         <a href={telHref} className="flex min-h-14 items-center justify-center gap-2 bg-navy-900 text-sm font-semibold text-white"><Phone className="size-4" aria-hidden /> {c.hero.call}</a>
-        <a href={wa} target="_blank" rel="noopener noreferrer" className="flex min-h-14 items-center justify-center gap-2 bg-[#1f9d55] text-sm font-semibold text-white"><MessageCircle className="size-4" aria-hidden /> WhatsApp</a>
+        <a href={wa} target="_blank" rel="noopener noreferrer" className="flex min-h-14 items-center justify-center gap-2 bg-[#15803d] text-sm font-semibold text-white"><MessageCircle className="size-4" aria-hidden /> WhatsApp</a>
       </div>
 
       <JsonLd data={faqSchema(c.faqs)} />

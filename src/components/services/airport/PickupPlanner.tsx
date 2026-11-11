@@ -96,7 +96,7 @@ export function PickupPlanner() {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-5 flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#1f9d55] text-sm font-semibold text-white hover:bg-[#188046]"
+        className="mt-5 flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#15803d] text-sm font-semibold text-white hover:bg-[#166534]"
       >
         <MessageCircle className="size-4" aria-hidden /> Send these details on WhatsApp
       </a>

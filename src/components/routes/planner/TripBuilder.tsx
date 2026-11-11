@@ -171,7 +171,7 @@ export function TripBuilder() {
       </button>
 
       <div className="mt-8 flex flex-col gap-3 sm:flex-row print:hidden">
-        <a href={link} target="_blank" rel="noopener noreferrer" className="flex min-h-12 flex-1 items-center justify-center gap-2 rounded-full bg-[#1f9d55] px-6 text-sm font-semibold text-white hover:bg-[#188046]">
+        <a href={link} target="_blank" rel="noopener noreferrer" className="flex min-h-12 flex-1 items-center justify-center gap-2 rounded-full bg-[#15803d] px-6 text-sm font-semibold text-white hover:bg-[#166534]">
           <MessageCircle className="size-4" aria-hidden /> Send the whole plan on WhatsApp
         </a>
         <button type="button" onClick={copy} className="flex min-h-12 items-center justify-center gap-2 rounded-full border border-navy-200 px-6 text-sm font-semibold text-navy-900 hover:border-gold-500">

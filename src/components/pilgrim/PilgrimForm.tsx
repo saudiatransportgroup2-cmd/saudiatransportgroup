@@ -54,7 +54,7 @@ export function PilgrimForm({ c }: { c: PilgrimContent }) {
           <textarea value={v.note} onChange={set("note")} rows={3} className={`${field} py-2`} />
         </label>
       </div>
-      <a href={link} target="_blank" rel="noopener noreferrer" className="mt-6 flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#1f9d55] text-sm font-semibold text-white hover:bg-[#188046]">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="mt-6 flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#15803d] text-sm font-semibold text-white hover:bg-[#166534]">
         <MessageCircle className="size-4" aria-hidden /> {c.form.send}
       </a>
       <p className="mt-3 text-xs leading-relaxed text-muted">{c.form.privacy}</p>

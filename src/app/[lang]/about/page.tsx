@@ -41,7 +41,7 @@ export default async function AboutPage({ params }: Props) {
           {t.about.values.map((v) => (
             <div key={v.t} className="reveal rounded-2xl border border-navy-100 bg-white p-7">
               <h3 className="text-lg font-semibold">{v.t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-navy-700/80">{v.d}</p>
+              <p className="mt-2 text-sm leading-relaxed text-navy-700">{v.d}</p>
             </div>
           ))}
         </div>

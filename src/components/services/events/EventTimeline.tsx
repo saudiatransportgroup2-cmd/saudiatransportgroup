@@ -125,7 +125,7 @@ export function EventTimeline() {
                   >
                     {idx + 1}
                   </button>
-                  <span className={`mt-3 hidden text-center text-[11px] font-medium leading-tight md:block ${i === idx ? "text-gold-400" : "text-white/45"}`}>{ph.title}</span>
+                  <span className={`mt-3 hidden text-center text-[11px] font-medium leading-tight md:block ${i === idx ? "text-gold-400" : "text-white/60"}`}>{ph.title}</span>
                 </li>
               ))}
             </ol>

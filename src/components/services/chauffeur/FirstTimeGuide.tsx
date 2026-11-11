@@ -55,7 +55,7 @@ export function FirstTimeGuide() {
                 ))}
               </tbody>
             </table>
-            <p className="mt-4 text-xs text-white/45">General comparison for planning. Arrangements vary by provider.</p>
+            <p className="mt-4 text-xs text-white/60">General comparison for planning. Arrangements vary by provider.</p>
           </div>
         </div>
       </Container>

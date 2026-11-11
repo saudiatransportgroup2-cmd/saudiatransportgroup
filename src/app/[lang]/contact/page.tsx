@@ -40,24 +40,24 @@ export default async function ContactPage({ params }: Props) {
             <li>
               <a href={telHref} className={card}>
                 <Phone className={icon} aria-hidden />
-                <span><span className="block text-sm text-navy-700/70">{t.contact.phone}</span><span className="font-semibold" dir="ltr">{site.phone.display}</span></span>
+                <span><span className="block text-sm text-navy-700">{t.contact.phone}</span><span className="font-semibold" dir="ltr">{site.phone.display}</span></span>
               </a>
             </li>
             <li>
               <a href={whatsappHref(defaultWhatsappMessage[lang])} target="_blank" rel="noopener noreferrer" className={card}>
                 <MessageCircle className={icon} aria-hidden />
-                <span><span className="block text-sm text-navy-700/70">{t.contact.whatsapp}</span><span className="font-semibold" dir="ltr">{site.phone.display}</span></span>
+                <span><span className="block text-sm text-navy-700">{t.contact.whatsapp}</span><span className="font-semibold" dir="ltr">{site.phone.display}</span></span>
               </a>
             </li>
             <li>
               <a href={mailHref} className={card}>
                 <Mail className={icon} aria-hidden />
-                <span><span className="block text-sm text-navy-700/70">{t.contact.email}</span><span className="font-semibold break-all">{site.email}</span></span>
+                <span><span className="block text-sm text-navy-700">{t.contact.email}</span><span className="font-semibold break-all">{site.email}</span></span>
               </a>
             </li>
             <li className={card.replace("hover:border-gold-400", "")}>
               <Clock className={icon} aria-hidden />
-              <span><span className="block text-sm text-navy-700/70">{t.contact.hours}</span><span className="font-semibold">{t.contact.hoursValue}</span></span>
+              <span><span className="block text-sm text-navy-700">{t.contact.hours}</span><span className="font-semibold">{t.contact.hoursValue}</span></span>
             </li>
           </ul>
           <div className="rounded-3xl border border-navy-100 bg-white p-6 shadow-sm sm:p-8">

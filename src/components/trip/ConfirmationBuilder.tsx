@@ -159,7 +159,7 @@ export function ConfirmationBuilder() {
               {copied ? <Check className="size-4" aria-hidden /> : <Copy className="size-4" aria-hidden />} {copied ? "Copied" : "Copy link"}
             </button>
             {digits && (
-              <a href={waLink} target="_blank" rel="noopener noreferrer" className="flex min-h-11 items-center gap-2 rounded-full bg-[#1f9d55] px-5 text-sm font-semibold text-white">
+              <a href={waLink} target="_blank" rel="noopener noreferrer" className="flex min-h-11 items-center gap-2 rounded-full bg-[#15803d] px-5 text-sm font-semibold text-white">
                 <MessageCircle className="size-4" aria-hidden /> Send on WhatsApp
               </a>
             )}

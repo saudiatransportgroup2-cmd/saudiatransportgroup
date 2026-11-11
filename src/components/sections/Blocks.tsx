@@ -33,7 +33,7 @@ export function Steps({ lang }: { lang: Lang }) {
             {i + 1}
           </span>
           <h3 className="mt-5 text-lg font-semibold">{s.t}</h3>
-          <p className="mt-2 text-sm leading-relaxed text-navy-700/80">{s.d}</p>
+          <p className="mt-2 text-sm leading-relaxed text-navy-700">{s.d}</p>
         </li>
       ))}
     </ol>
@@ -74,7 +74,7 @@ export function FaqList({ lang, items }: { lang: Lang; items: { q: L10n; a: L10n
             {f.q[lang]}
             <span aria-hidden className="text-xl text-gold-600 transition-transform group-open:rotate-45">+</span>
           </summary>
-          <p className="mt-3 text-sm leading-relaxed text-navy-700/80">{f.a[lang]}</p>
+          <p className="mt-3 text-sm leading-relaxed text-navy-700">{f.a[lang]}</p>
         </details>
       ))}
     </div>

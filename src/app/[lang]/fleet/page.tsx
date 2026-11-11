@@ -29,9 +29,10 @@ export default async function FleetPage({ params }: Props) {
         lead={t.fleet.lead}
         crumbs={[{ label: t.nav.home, href: href(lang) }, { label: t.nav.fleet }]}
       />
-      <Section>
+      <Section labelledBy="fleet-list">
+        <h2 id="fleet-list" className="sr-only">{t.fleet.title}</h2>
         <FleetGrid lang={lang} showCta />
-        <p className="mt-10 text-sm text-navy-700/70">{t.fleet.note}</p>
+        <p className="mt-10 text-sm text-navy-700">{t.fleet.note}</p>
       </Section>
       <CtaBand lang={lang} />
       <JsonLd

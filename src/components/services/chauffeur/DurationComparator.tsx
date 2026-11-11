@@ -115,7 +115,7 @@ export function DurationComparator() {
                 href={enquiryLink("private chauffeur hire", { Duration: pl.name })}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="sm:col-span-2 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#1f9d55] px-6 text-sm font-semibold text-white hover:bg-[#188046]"
+                className="sm:col-span-2 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#15803d] px-6 text-sm font-semibold text-white hover:bg-[#166534]"
               >
                 <MessageCircle className="size-4" aria-hidden /> Enquire about {pl.name.toLowerCase()} hire
               </a>
@@ -128,7 +128,7 @@ export function DurationComparator() {
             <caption className="mb-4 text-start text-xs font-semibold uppercase tracking-[0.25em] text-gold-400">Hourly versus daily chauffeur arrangements</caption>
             <thead>
               <tr className="border-b border-gold-500/60 text-white/60">
-                <th scope="col" className="p-4 text-start text-xs uppercase tracking-widest">&nbsp;</th>
+                <th scope="col" className="p-4 text-start text-xs uppercase tracking-widest"><span className="sr-only">Option</span></th>
                 <th scope="col" className="p-4 text-start font-semibold text-white">Hourly</th>
                 <th scope="col" className="p-4 text-start font-semibold text-white">Daily</th>
                 <th scope="col" className="p-4 text-start font-semibold text-white">Weekly</th>

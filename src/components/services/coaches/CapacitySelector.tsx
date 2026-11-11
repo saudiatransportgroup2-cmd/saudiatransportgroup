@@ -88,7 +88,7 @@ export function CapacitySelector() {
                 href={enquiryLink("bus or coach rental with a driver", { Passengers: people, Luggage: bags, "Category discussed": band.label })}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex min-h-12 items-center gap-2 rounded-full bg-[#1f9d55] px-6 text-sm font-semibold text-white hover:bg-[#188046]"
+                className="mt-6 inline-flex min-h-12 items-center gap-2 rounded-full bg-[#15803d] px-6 text-sm font-semibold text-white hover:bg-[#166534]"
               >
                 <MessageCircle className="size-4" aria-hidden /> Ask us to confirm
               </a>

@@ -57,7 +57,7 @@ export function SectionHeading({
         {title}
       </h2>
       <span className={cx("mt-4 block h-0.5 w-14 bg-gold-500", align === "center" && "mx-auto")} aria-hidden />
-      {lead && <p className={cx("mt-5 text-base leading-relaxed sm:text-lg", invert ? "text-white/75" : "text-navy-700/80")}>{lead}</p>}
+      {lead && <p className={cx("mt-5 text-base leading-relaxed sm:text-lg", invert ? "text-white/75" : "text-navy-700")}>{lead}</p>}
     </div>
   );
 }
@@ -69,7 +69,7 @@ const variants: Record<Variant, string> = {
   navy: "bg-navy-900 text-white hover:bg-navy-700",
   outline: "border border-navy-900/25 text-navy-900 hover:border-navy-900 hover:bg-navy-50",
   outlineLight: "border border-white/40 text-white hover:border-white hover:bg-white/10",
-  whatsapp: "bg-[#1f9d55] text-white hover:bg-[#188046]",
+  whatsapp: "bg-[#15803d] text-white hover:bg-[#166534]",
 };
 
 const base =

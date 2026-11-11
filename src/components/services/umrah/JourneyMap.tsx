@@ -130,7 +130,7 @@ export function JourneyMap() {
               href={enquiryLink("a pilgrim transfer", { Route: active.label })}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-full bg-[#1f9d55] px-6 text-sm font-semibold text-white hover:bg-[#188046]"
+              className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-full bg-[#15803d] px-6 text-sm font-semibold text-white hover:bg-[#166534]"
             >
               <MessageCircle className="size-4" aria-hidden /> Ask about this route
             </a>

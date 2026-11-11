@@ -20,18 +20,18 @@ export function VehicleCard({ lang, v, showCta }: { lang: Lang; v: Vehicle; show
       </div>
       <div className="flex flex-1 flex-col p-6">
         <h3 className="text-lg font-semibold">{v.name[lang]}</h3>
-        <p className="mt-2 text-sm leading-relaxed text-navy-700/80">{v.desc[lang]}</p>
+        <p className="mt-2 text-sm leading-relaxed text-navy-700">{v.desc[lang]}</p>
         <dl className="mt-5 grid grid-cols-2 gap-3 text-sm">
           <div className="rounded-xl bg-navy-50 p-3">
-            <dt className="flex items-center gap-1.5 text-xs text-navy-700/70"><Users className="size-3.5" aria-hidden /> {t.fleet.group}</dt>
+            <dt className="flex items-center gap-1.5 text-xs text-navy-700"><Users className="size-3.5" aria-hidden /> {t.fleet.group}</dt>
             <dd className="mt-1 font-semibold">{v.group[lang]}</dd>
           </div>
           <div className="rounded-xl bg-navy-50 p-3">
-            <dt className="flex items-center gap-1.5 text-xs text-navy-700/70"><Luggage className="size-3.5" aria-hidden /> {t.fleet.luggage}</dt>
+            <dt className="flex items-center gap-1.5 text-xs text-navy-700"><Luggage className="size-3.5" aria-hidden /> {t.fleet.luggage}</dt>
             <dd className="mt-1 font-semibold">{v.luggage[lang]}</dd>
           </div>
         </dl>
-        <p className="mt-4 text-xs text-navy-700/70">
+        <p className="mt-4 text-xs text-navy-700">
           <span className="font-semibold text-navy-900">{t.fleet.bestFor}:</span> {v.bestFor[lang]}
         </p>
         {showCta && (

@@ -59,7 +59,7 @@ export default async function HomePage({ params }: Props) {
                 className="group flex h-full flex-col rounded-2xl border border-navy-100 bg-white p-7 transition-all hover:-translate-y-1 hover:border-gold-400 hover:shadow-lg"
               >
                 <h3 className="text-lg font-semibold">{r.title[lang]}</h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-navy-700/80">{r.blurb[lang]}</p>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-navy-700">{r.blurb[lang]}</p>
                 <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold-600">
                   {t.cta.learnMore} <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
                 </span>
@@ -83,7 +83,7 @@ export default async function HomePage({ params }: Props) {
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
           <div className="max-w-2xl">
             <h2 id="planner-h" className="text-3xl font-semibold tracking-tight sm:text-4xl">{lang === "ar" ? "خطط لكل تنقلات رحلة العمرة" : "Plan every journey of your Umrah"}</h2>
-            <p className="mt-4 text-base leading-relaxed text-navy-700/80">
+            <p className="mt-4 text-base leading-relaxed text-navy-700">
               {lang === "ar"
                 ? "أضف المطار ومكة والمدينة والمغادرة في طلب واحد، وأرسله برسالة واحدة على واتساب."
                 : "Add the airport, Makkah, Madinah and departure in one request and send it as a single WhatsApp message."}
@@ -97,7 +97,7 @@ export default async function HomePage({ params }: Props) {
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
           <div className="max-w-2xl">
             <h2 id="agencies-h" className="text-3xl font-semibold tracking-tight sm:text-4xl">{t.home.agenciesTitle}</h2>
-            <p className="mt-4 text-base leading-relaxed text-navy-700/80">{t.home.agenciesText}</p>
+            <p className="mt-4 text-base leading-relaxed text-navy-700">{t.home.agenciesText}</p>
           </div>
           <ButtonLink href="/agencies" variant="navy" arrow>{t.home.agenciesCta}</ButtonLink>
         </div>

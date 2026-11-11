@@ -42,7 +42,7 @@ export function SupportForm() {
           <textarea value={details} onChange={(e) => setDetails(e.target.value)} rows={4} className={`${field} py-2`} />
         </label>
       </div>
-      <a href={link} target="_blank" rel="noopener noreferrer" className="mt-6 flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#1f9d55] text-sm font-semibold text-white hover:bg-[#188046]">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="mt-6 flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#15803d] text-sm font-semibold text-white hover:bg-[#166534]">
         <MessageCircle className="size-4" aria-hidden /> Send on WhatsApp
       </a>
       <p className="mt-3 text-xs leading-relaxed text-muted">Nothing is stored on this page. For anything urgent, call us directly.</p>

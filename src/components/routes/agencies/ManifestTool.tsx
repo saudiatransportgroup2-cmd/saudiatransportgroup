@@ -60,7 +60,7 @@ export function ManifestTool() {
         aria-disabled={!rows.length}
         target="_blank"
         rel="noopener noreferrer"
-        className={`mt-6 flex min-h-12 items-center justify-center gap-2 rounded-full text-sm font-semibold text-white ${rows.length ? "bg-[#1f9d55] hover:bg-[#188046]" : "bg-navy-200 pointer-events-none"}`}
+        className={`mt-6 flex min-h-12 items-center justify-center gap-2 rounded-full text-sm font-semibold text-white ${rows.length ? "bg-[#15803d] hover:bg-[#166534]" : "bg-navy-200 pointer-events-none"}`}
       >
         <MessageCircle className="size-4" aria-hidden /> Send this list on WhatsApp
       </a>

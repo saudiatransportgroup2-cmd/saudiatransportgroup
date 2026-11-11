@@ -13,7 +13,7 @@
   --color-gold-500: #c9a14a;
   --color-gold-600: #8a6a1f;
   --color-ink: #182433;
-  --color-muted: #64748b;
+  --color-muted: #475569;
   --font-sans: var(--font-poppins), var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
   --animate-fade-up: fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
   @keyframes fade-up {

@@ -17,7 +17,7 @@ export function ServiceCard({ lang, service }: { lang: Lang; service: ServiceLin
           {service.title[lang]}
         </Link>
       </h3>
-      <p className="mt-3 flex-1 text-sm leading-relaxed text-navy-700/80">{service.short[lang]}</p>
+      <p className="mt-3 flex-1 text-sm leading-relaxed text-navy-700">{service.short[lang]}</p>
       <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold-600">
         {t.cta.learnMore} <ArrowRight className="size-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" aria-hidden />
       </span>
