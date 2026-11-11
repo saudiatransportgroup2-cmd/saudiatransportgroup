@@ -32,13 +32,14 @@ async function sendEmail(text: string, subject: string): Promise<boolean> {
     method: "POST",
     headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
     body: JSON.stringify({
-      from: process.env.ENQUIRY_FROM_EMAIL ?? "Website enquiries <onboarding@resend.dev>",
+      from: process.env.ENQUIRY_FROM_EMAIL || "Website enquiries <onboarding@resend.dev>",
       to: to.split(",").map((s) => s.trim()),
       subject,
       text,
       html: `<pre style="font:14px/1.6 system-ui">${esc(text)}</pre>`,
     }),
   });
+  if (!res.ok) console.error("[enquiry] email failed", res.status, (await res.text()).slice(0, 300));
   return res.ok;
 }
 
