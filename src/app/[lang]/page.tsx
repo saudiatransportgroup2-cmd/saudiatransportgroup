@@ -51,7 +51,7 @@ export default async function HomePage({ params }: Props) {
 
       <Section labelledBy="routes-h">
         <SectionHeading id="routes-h" title={t.home.routesTitle} lead={t.home.routesLead} />
-        <ul className="grid gap-6 md:grid-cols-3">
+        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {routeLinks.map((r) => (
             <li key={r.href}>
               <Link

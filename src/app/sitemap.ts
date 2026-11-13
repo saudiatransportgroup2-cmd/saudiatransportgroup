@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
   // Hand-written route guides and the agencies page.
-  const extra = ["/routes/jeddah-airport-to-makkah", "/routes/makkah-to-madinah", "/routes/madinah-airport-to-hotel", "/agencies", "/umrah-trip-planner", "/driver-card", "/prayer-time-journey-planner", "/umrah-season-calendar", "/travel-tools", "/compare-transport-quotes", "/check-transport-licence", "/arrival-day-checklist", "/corporate-transport", "/trip-support", "/ur", "/id", "/gcc", "/gcc/al-khobar-to-manama", "/gcc/manama-to-al-khobar", "/gcc/dammam-to-doha", "/gcc/doha-to-dammam"].map((p) => ({ url: `${site.url}${p}`, changeFrequency: "monthly" as const, priority: 0.7 }));
+  const extra = ["/routes/jeddah-airport-to-makkah", "/routes/makkah-to-madinah", "/routes/madinah-airport-to-hotel", "/routes/jeddah-airport-to-madinah", "/agencies", "/umrah-trip-planner", "/driver-card", "/prayer-time-journey-planner", "/umrah-season-calendar", "/travel-tools", "/compare-transport-quotes", "/check-transport-licence", "/arrival-day-checklist", "/corporate-transport", "/trip-support", "/ur", "/id", "/gcc", "/gcc/al-khobar-to-manama", "/gcc/manama-to-al-khobar", "/gcc/dammam-to-doha", "/gcc/doha-to-dammam"].map((p) => ({ url: `${site.url}${p}`, changeFrequency: "monthly" as const, priority: 0.7 }));
   const legal = ["/privacy", "/terms"].map((p) => ({ url: `${site.url}${p}`, changeFrequency: "yearly" as const, priority: 0.3 }));
   return [...localized, ...servicePages, ...extra, ...legal];
 }

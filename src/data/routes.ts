@@ -17,6 +17,14 @@ export const routeLinks: RouteLink[] = [
     },
   },
   {
+    href: "/routes/jeddah-airport-to-madinah",
+    title: { en: "Jeddah Airport to Madinah", ar: "مطار جدة إلى المدينة المنورة" },
+    blurb: {
+      en: "Train or car? An honest comparison, and how a door-to-door transfer works.",
+      ar: "القطار أم السيارة؟ مقارنة صريحة، وكيف يعمل التوصيل من الباب إلى الباب.",
+    },
+  },
+  {
     href: "/routes/makkah-to-madinah",
     title: { en: "Makkah to Madinah", ar: "مكة المكرمة إلى المدينة المنورة" },
     blurb: {

@@ -13,6 +13,7 @@ const pages = [
   "routes/jeddah-airport-to-makkah",
   "routes/makkah-to-madinah",
   "routes/madinah-airport-to-hotel",
+  "routes/jeddah-airport-to-madinah",
   "agencies",
   "umrah-trip-planner",
   "driver-card",

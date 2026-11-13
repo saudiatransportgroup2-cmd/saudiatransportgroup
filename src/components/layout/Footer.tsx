@@ -58,6 +58,7 @@ export function Footer({ lang }: { lang: Lang }) {
             <h2 className="mb-4 mt-8 text-sm font-semibold uppercase tracking-wider text-gold-400">{lang === "ar" ? "مسارات شائعة" : "Popular routes"}</h2>
             <ul className="space-y-2.5">
               <li><Link className={linkCls} href="/routes/jeddah-airport-to-makkah">{lang === "ar" ? "مطار جدة إلى مكة" : "Jeddah Airport to Makkah"}</Link></li>
+              <li><Link className={linkCls} href="/routes/jeddah-airport-to-madinah">{lang === "ar" ? "مطار جدة إلى المدينة" : "Jeddah Airport to Madinah"}</Link></li>
               <li><Link className={linkCls} href="/routes/makkah-to-madinah">{lang === "ar" ? "مكة إلى المدينة" : "Makkah to Madinah"}</Link></li>
               <li><Link className={linkCls} href="/routes/madinah-airport-to-hotel">{lang === "ar" ? "مطار المدينة إلى الفندق" : "Madinah Airport to hotel"}</Link></li>
               <li><Link className={linkCls} href="/gcc">{lang === "ar" ? "النقل بين دول الخليج" : "GCC cross-border"}</Link></li>
