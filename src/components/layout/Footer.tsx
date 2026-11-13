@@ -60,6 +60,7 @@ export function Footer({ lang }: { lang: Lang }) {
               <li><Link className={linkCls} href="/routes/jeddah-airport-to-makkah">{lang === "ar" ? "مطار جدة إلى مكة" : "Jeddah Airport to Makkah"}</Link></li>
               <li><Link className={linkCls} href="/routes/makkah-to-madinah">{lang === "ar" ? "مكة إلى المدينة" : "Makkah to Madinah"}</Link></li>
               <li><Link className={linkCls} href="/routes/madinah-airport-to-hotel">{lang === "ar" ? "مطار المدينة إلى الفندق" : "Madinah Airport to hotel"}</Link></li>
+              <li><Link className={linkCls} href="/gcc">{lang === "ar" ? "النقل بين دول الخليج" : "GCC cross-border"}</Link></li>
             </ul>
           </nav>
 

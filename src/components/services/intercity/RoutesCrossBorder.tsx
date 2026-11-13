@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "@/components/ui/primitives";
 
 const baseNote =
@@ -20,6 +21,7 @@ export function AlKhobarToBahrain() {
                 Crossing a border adds steps that a domestic journey does not have: identity and travel documents, checks at the border, and arrangements for the vehicle and driver. These vary, and they can change. We explain what applies to your route when you enquire.
               </p>
               <p className="border-s-2 border-gold-500 ps-4 text-sm text-white/85">{baseNote}</p>
+              <p className="text-sm">Full guides: <Link className="font-semibold text-gold-300 underline underline-offset-4" href="/gcc/al-khobar-to-manama">Al Khobar to Manama</Link> and <Link className="font-semibold text-gold-300 underline underline-offset-4" href="/gcc/manama-to-al-khobar">Manama to Al Khobar</Link>.</p>
             </div>
           </div>
           <div className="self-start bg-navy-900 p-7">
@@ -67,6 +69,7 @@ export function SaudiToQatar() {
                 Availability depends on the route, the vehicle and the arrangements required for the crossing. We will tell you plainly whether we can help with your request, and explain the steps involved. We do not guarantee availability for any cross-border route until we have confirmed it in writing.
               </p>
               <p className="border-s-2 border-gold-500 ps-4 text-sm">{baseNote}</p>
+              <p className="text-sm">Full guides: <Link className="font-semibold text-navy-900 underline decoration-gold-500 underline-offset-4" href="/gcc/dammam-to-doha">Dammam to Doha</Link> and <Link className="font-semibold text-navy-900 underline decoration-gold-500 underline-offset-4" href="/gcc/doha-to-dammam">Doha to Dammam</Link>.</p>
             </div>
           </div>
         </div>

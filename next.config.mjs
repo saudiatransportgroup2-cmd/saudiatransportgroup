@@ -9,7 +9,7 @@ const moved = {
   chauffeur: "/private-chauffeur-hire",
   "corporate-transportation": "/private-chauffeur-hire",
   "intercity-transfers": "/services/city-to-city-transfer",
-  "gcc-transfers": "/services/city-to-city-transfer",
+  "gcc-transfers": "/gcc",
 };
 
 /** @type {import('next').NextConfig} */

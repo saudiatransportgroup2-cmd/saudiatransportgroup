@@ -26,6 +26,11 @@ const pages = [
   "trip-support",
   "ur",
   "id",
+  "gcc",
+  "gcc/al-khobar-to-manama",
+  "gcc/manama-to-al-khobar",
+  "gcc/dammam-to-doha",
+  "gcc/doha-to-dammam",
 ];
 
 const get = (html, re) => html.match(re)?.[1]?.replace(/&amp;/g, "&").trim() ?? "";
